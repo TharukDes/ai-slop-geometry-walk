@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#05070c" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect x='26' y='26' width='48' height='48' rx='6' fill='%2310303f' stroke='%234dd0ff' stroke-width='6'/%3E%3C/svg%3E"
+    />
+    <title>Geometry Walk</title>
+    <script type="module" crossorigin src="./assets/index-C6KD0F20.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BMC3sfFx.css">
+  </head>
+  <body>
+    <main id="shell">
+      <canvas id="game" aria-label="Geometry Walk game canvas"></canvas>
+
+      <div id="hud">
+        <div class="hud-top">
+          <div class="hud-block">
+            <span class="label">SCORE</span>
+            <span id="hud-score" class="value">0</span>
+          </div>
+          <div class="hud-block" style="align-items: flex-end">
+            <span class="label">LIVES</span>
+            <span id="hud-lives" class="value">■ ■ ■</span>
+          </div>
+        </div>
+
+        <div id="hud-boss" hidden>
+          <span class="label">BOSS</span>
+          <div class="boss-track"><div id="hud-boss-fill" class="boss-fill"></div></div>
+        </div>
+
+        <div class="hud-controls" aria-label="Controls">
+          <kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd> move the cube
+        </div>
+      </div>
+
+      <div id="hud-toast" class="toast" role="status"></div>
+
+      <div id="hud-message" hidden>
+        <div id="hud-message-title">GAME OVER</div>
+        <div id="hud-message-hint">press Enter to play again</div>
+      </div>
+    </main>
+
+  </body>
+</html>
