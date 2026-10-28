@@ -49,6 +49,12 @@ body {
   justify-content: space-between;
 }
 
+.hud-header {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
 .hud-top {
   display: flex;
   align-items: flex-start;

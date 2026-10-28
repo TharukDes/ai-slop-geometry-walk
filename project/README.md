@@ -48,7 +48,16 @@ works as an alias for the arrow keys.
 
 ## Development
 
+### Requirements
+
+- **Node.js 20.19+** — Vite 8 and Vitest 5 do not run on older releases. The
+  repository pins Node 24.22.2 in `mise.toml`, `.node-version` and `.nvmrc`;
+  run `mise install` (or `nvm use`) before installing dependencies if your
+  system Node is older.
+- **pnpm 12.14+** (declared via `packageManager`).
+
 ```bash
+mise install     # optional: install the pinned Node version
 pnpm install     # install dependencies
 pnpm dev         # start the Vite dev server
 pnpm test        # run the unit tests (Vitest)

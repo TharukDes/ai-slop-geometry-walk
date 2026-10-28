@@ -15,20 +15,22 @@
       <canvas id="game" aria-label="Geometry Walk game canvas"></canvas>
 
       <div id="hud">
-        <div class="hud-top">
-          <div class="hud-block">
-            <span class="label">SCORE</span>
-            <span id="hud-score" class="value">0</span>
+        <div class="hud-header">
+          <div class="hud-top">
+            <div class="hud-block">
+              <span class="label">SCORE</span>
+              <span id="hud-score" class="value">0</span>
+            </div>
+            <div class="hud-block" style="align-items: flex-end">
+              <span class="label">LIVES</span>
+              <span id="hud-lives" class="value">■ ■ ■</span>
+            </div>
           </div>
-          <div class="hud-block" style="align-items: flex-end">
-            <span class="label">LIVES</span>
-            <span id="hud-lives" class="value">■ ■ ■</span>
-          </div>
-        </div>
 
-        <div id="hud-boss" hidden>
-          <span class="label">BOSS</span>
-          <div class="boss-track"><div id="hud-boss-fill" class="boss-fill"></div></div>
+          <div id="hud-boss" hidden>
+            <span class="label">BOSS</span>
+            <div class="boss-track"><div id="hud-boss-fill" class="boss-fill"></div></div>
+          </div>
         </div>
 
         <div class="hud-controls" aria-label="Controls">

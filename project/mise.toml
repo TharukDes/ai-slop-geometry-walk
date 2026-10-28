@@ -1,0 +1,4 @@
+[tools]
+# Vite 8 and Vitest 5 require Node 20.19+; pin a current LTS so `pnpm dev`
+# works even when the system Node is older.
+node = "24.22.2"

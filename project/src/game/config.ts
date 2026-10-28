@@ -206,4 +206,5 @@ export const COLORS = {
   star: '#9fb6d4',
   asteroid: '#8ea3c0',
   asteroidFill: '#2b3240',
+  asteroidCrater: '#1b2230',
 } as const;
